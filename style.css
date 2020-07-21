@@ -198,23 +198,36 @@ main {
   background: rgb(34, 34, 34);
 }
 
-.trending-box h2 {
-  color: white;
-  margin-left: 12px;
-  font-family: Arial, Helvetica, sans-serif;
-  letter-spacing: 1px;
+.popular-area {
+  width: 100%;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  display: grid;
+  grid-template-areas:
+    "had had had had had"
+    "img img img img img";
 }
 
-.popular {
+.popular-area h2 {
+  grid-area: had;
+  height: 40px;
+  padding: 10px;
+  color: white;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.popular-list {
   display: flex;
+  grid-area: img;
+  width: 100%;
+  height: 150px;
   align-items: center;
   justify-content: space-between;
   padding: 8px;
-  grid-column-start: 1;
-  grid-column-end: 3;
 }
 
-.popular-artist {
+.popular-artist-img {
   width: 120px;
   height: 120px;
   border-radius: 50%;
@@ -222,13 +235,11 @@ main {
   line-height: 120px;
   background-color: rgb(51, 51, 51);
   color: white;
-  position: relative;
 }
 
-.popular-artist p {
-  position: absolute;
-  bottom: -80px;
-  right: 20px;
+.popular-list p {
+  height: 20px;
+  line-height: 40px;
 }
 
 .playlist {
@@ -239,16 +250,28 @@ main {
   margin-top: 60px;
 }
 
-.top-played {
-  color: white;
+.list {
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  height: 400px;
-  padding: 10px;
+  padding: 40px;
 }
 
-.top-played h1 {
+.list h1 {
   font-size: 15px;
   font-family: sans-serif;
+  color: white;
+}
+
+.top-played {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  color: white;
+  width: 100%;
+  height: 340px;
+  padding: 10px;
 }
 
 .top-song-area {
@@ -256,8 +279,9 @@ main {
   width: 400px;
   display: flex;
   align-items: center;
-  margin: 30px 0px 0px 50px;
   padding: 8px;
+  justify-content: space-between;
+  margin-top: 10px;
   font-size: 14px;
   border-radius: 15px;
   background-color: rgba(169, 169, 169, 0.075);
@@ -305,26 +329,24 @@ main {
   color: red;
 }
 
-.top-album-img,
-.top-song-num,
-.top-play-button,
-.top-song-name,
-.heart-icon,
-.heart-icon-liked {
-  margin-right: 20px;
+.recommended-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
-.recommend-area {
-  height: 400px;
-  display: grid;
-  grid-template-rows: 120px 1fr 1fr;
-  grid-template-columns: 180px 1fr;
-  color: white;
-  margin-left: 45px;
-}
-.recommended {
+.rec-list {
   width: 100%;
-  margin-left: 60px;
+}
+
+.recommend-songs {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 200px 1fr;
+  color: white;
+  padding: 10px;
+  height: 340px;
 }
 
 .recommended-header {
@@ -340,7 +362,7 @@ main {
   align-items: center;
   justify-content: center;
   display: flex;
-  background-color: teal;
+  background-color: red;
   margin-top: 8px;
 }
 
