@@ -13,7 +13,7 @@ body {
 main {
   height: 100vh;
   display: grid;
-  grid-template-columns: 300px 1fr;
+  grid-template-columns: 250px 1fr;
   grid-template-rows: 80px 1fr 60px;
   grid-template-areas:
     "header header"
@@ -23,7 +23,7 @@ main {
 
 .main-header {
   display: grid;
-  grid-template-columns: 300px 1fr auto auto;
+  grid-template-columns: 250px 1fr auto auto;
   grid-template-rows: 80px;
   text-transform: uppercase;
   grid-area: header;
@@ -137,7 +137,7 @@ main {
   align-items: center;
   justify-content: center;
   width: 600px;
-  height: 400px;
+  height: 550px;
 }
 
 .trending-text-box {
@@ -199,16 +199,13 @@ main {
 
 .popular-area {
   width: 100%;
+  height: 200px;
   grid-column-start: 1;
   grid-column-end: 3;
-  display: grid;
-  grid-template-areas:
-    "had had had had had"
-    "img img img img img";
 }
 
 .popular-area h2 {
-  grid-area: had;
+  width: 100%;
   height: 40px;
   padding: 10px;
   color: white;
@@ -218,11 +215,9 @@ main {
 
 .popular-list {
   display: flex;
-  grid-area: img;
-  width: 100%;
-  height: 150px;
-  align-items: center;
   justify-content: space-between;
+  width: 100%;
+  align-items: center;
   padding: 8px;
 }
 
@@ -280,7 +275,7 @@ main {
   align-items: center;
   padding: 8px;
   justify-content: space-between;
-  margin-top: 10px;
+  margin: 14px 10px;
   font-size: 14px;
   border-radius: 15px;
   background-color: rgba(169, 169, 169, 0.075);
@@ -331,21 +326,22 @@ main {
 .recommended-area {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   width: 100%;
-}
-
-.rec-list {
-  width: 100%;
+  height: 100%;
+  padding: 40px 4px;
 }
 
 .recommend-songs {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 200px 1fr;
+  width: 500px;
+  height: 330px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 5px;
   color: white;
-  padding: 10px;
-  height: 340px;
+  padding: 18px 0px 0px 4px;
 }
 
 .recommended-area h2 {
@@ -354,14 +350,40 @@ main {
   font-family: sans-serif;
 }
 
-.rec-song {
-  width: 90px;
-  height: 90px;
-  align-items: center;
-  justify-content: center;
+.rec-song-area {
+  width: 180px;
+  height: 98px;
   display: flex;
-  background-color: red;
-  margin-top: 8px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(169, 169, 169, 0.075);
+  border-radius: 14px;
+  padding: 8px;
+}
+
+.rec-album-img {
+  width: 80px;
+  height: 100%;
+  border-radius: 14px;
+  background-color: yellow;
+}
+.rec-artist-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 75px;
+  height: 100%;
+}
+
+.rec-artist-name h1 {
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.rec-artist-name p {
+  font-size: 10px;
+  color: darkgray;
 }
 
 .footer {
