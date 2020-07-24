@@ -61,9 +61,12 @@ main {
   border: none;
 }
 
-.notifications-area i {
+.notifications-area {
   height: 80px;
   line-height: 80px;
+}
+
+.notifications-area i {
   color: red;
   font-size: 20px;
   padding: 0 15px;
@@ -83,6 +86,7 @@ main {
   background-color: teal;
   text-align: center;
   line-height: 50px;
+  cursor: pointer;
 }
 
 .left-nav {
@@ -417,15 +421,84 @@ main {
 }
 
 .equ-box1 {
-  height: 25px;
+  animation: colors 3s infinite;
+}
+
+@keyframes colors {
+  0% {
+    background-color: orange;
+    height: 40%;
+  }
+  25% {
+    background-color: magenta;
+    height: 50%;
+  }
+  50% {
+    background-color: mediumturquoise;
+    height: 35%;
+  }
+  75% {
+    background-color: yellowgreen;
+    height: 50%;
+  }
+  100% {
+    background-color: aqua;
+    height: 35%;
+  }
 }
 
 .equ-box2 {
-  height: 20px;
+  animation: colors2 3s infinite;
+}
+
+@keyframes colors2 {
+  0% {
+    background-color: orange;
+    height: 10%;
+  }
+  25% {
+    background-color: hotpink;
+    height: 70%;
+  }
+  50% {
+    background-color: lawngreen;
+    height: 20%;
+  }
+  75% {
+    background-color: aquamarine;
+    height: 50%;
+  }
+  100% {
+    background-color: rgb(185, 67, 231);
+    height: 20%;
+  }
 }
 
 .equ-box3 {
-  height: 30px;
+  animation: colors3 3s infinite;
+}
+
+@keyframes colors3 {
+  0% {
+    background-color: rgb(255, 102, 0);
+    height: 30%;
+  }
+  25% {
+    background-color: salmon;
+    height: 60%;
+  }
+  50% {
+    background-color: rgb(124, 37, 223);
+    height: 35%;
+  }
+  75% {
+    background-color: hotpink;
+    height: 70%;
+  }
+  100% {
+    background-color: rgb(205, 50, 89);
+    height: 50%;
+  }
 }
 
 .player-song-info {
@@ -486,6 +559,7 @@ main {
   color: white;
   font-size: 12px;
   background: none;
+  cursor: pointer;
 }
 
 .play-pause-btn {
@@ -508,6 +582,7 @@ main {
   height: 4px;
   margin: 0px 18px;
   background-color: rgba(169, 169, 169, 0.185);
+  cursor: pointer;
 }
 
 .song-time-played {
@@ -540,4 +615,5 @@ main {
   text-align: center;
   line-height: 40px;
   color: white;
+  cursor: pointer;
 }
