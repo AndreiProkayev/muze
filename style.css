@@ -421,83 +421,83 @@ main {
 }
 
 .equ-box1 {
-  animation: colors 3s infinite;
+  animation: colors 2.8s infinite;
 }
 
 @keyframes colors {
   0% {
-    background-color: orange;
-    height: 40%;
+    background-color: #ff6600;
+    height: 70%;
   }
   25% {
-    background-color: magenta;
+    background-color: #ff00ff;
     height: 50%;
   }
   50% {
-    background-color: mediumturquoise;
-    height: 35%;
+    background-color: #00ffff;
+    height: 15%;
   }
   75% {
-    background-color: yellowgreen;
-    height: 50%;
+    background-color: #00ff00;
+    height: 35%;
   }
   100% {
-    background-color: aqua;
-    height: 35%;
+    background-color: #ffff00;
+    height: 70%;
   }
 }
 
 .equ-box2 {
-  animation: colors2 3s infinite;
+  animation: colors2 2.8s infinite;
 }
 
 @keyframes colors2 {
   0% {
-    background-color: orange;
-    height: 10%;
+    background-color: #00ffff;
+    height: 20%;
   }
   25% {
-    background-color: hotpink;
+    background-color: #00ff00;
     height: 70%;
   }
   50% {
-    background-color: lawngreen;
+    background-color: #ff6600;
     height: 20%;
   }
   75% {
-    background-color: aquamarine;
+    background-color: #cc00ff;
     height: 50%;
   }
   100% {
-    background-color: rgb(185, 67, 231);
+    background-color: #00ffff;
     height: 20%;
   }
 }
 
 .equ-box3 {
-  animation: colors3 3s infinite;
+  animation: colors3 2.8s infinite;
 }
 
 @keyframes colors3 {
   0% {
-    background-color: rgb(255, 102, 0);
-    height: 30%;
-  }
-  25% {
-    background-color: salmon;
+    background-color: #cc00ff;
     height: 60%;
   }
-  50% {
-    background-color: rgb(124, 37, 223);
-    height: 35%;
+  25% {
+    background-color: #ff6600;
+    height: 20%;
   }
-  75% {
-    background-color: hotpink;
+  50% {
+    background-color: #00ff00;
     height: 70%;
   }
+  75% {
+    background-color: #00ffff;
+    height: 10%;
+  }
   100% {
-    background-color: rgb(205, 50, 89);
-    height: 50%;
+    background-color: #cc00ff;
+    height: 60%;
   }
 }
 
